@@ -1,0 +1,322 @@
+/* Resetowanie marginesów i paddingów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stylizacja dla ciała strony */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url('tlo.jpg'); /* Ścieżka do zdjęcia tła */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Stylizacja nagłówka */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px; /* Ustawia padding dla nagłówka */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Stylizacja logo w nagłówku */
+.logo {
+    height: 50px; /* Dostosuj wysokość logo */
+    margin-left: 20px; /* Dostosuj odstęp od lewej krawędzi */
+}
+
+/* Stylizacja dla menu nawigacyjnego */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Dostosuj odstęp między pozycjami menu */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Stylizacja głównej sekcji strony */
+main {
+    margin-top: 70px; /* Przestrzeń na menu */
+    padding: 20px;
+    text-align: center;
+    min-height: calc(100vh - 140px); /* Wysokość okna minus wysokość nagłówka i stopki */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wyśrodkowanie w poziomie */
+    position: relative; /* Pozycjonowanie względne, aby zdjęcia absolutne były względem main */
+}
+
+
+.black-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Czarne tło z lekko przezroczystym efektem */
+    color: white; /* Kolor tekstu */
+    padding: 30px; /* Wewnętrzny odstęp */
+    max-width: 800px; /* Maksymalna szerokość kontenera */
+    margin: 20px auto; /* Automatyczne marginesy dla wyśrodkowania poziomego */
+    border-radius: 10px; /* Zaokrąglenie narożników */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Delikatny cień pod polem */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    line-height: 1.6; /* Wysokość linii dla lepszej czytelności */
+    display: flex; /* Użyj flexboxa */
+    flex-direction: column; /* Ustawienie kolumny */
+    justify-content: center; /* Wyśrodkowanie w pionie */
+    align-items: center; /* Wyśrodkowanie w poziomie */
+}
+
+/* Stylizacja dla małego zdjęcia w sekcji main */
+.small-image {
+    position: absolute; /* Pozycjonowanie absolutne w odniesieniu do sekcji main */
+    top: 70px; /* Odległość od górnej krawędzi */
+    right: 40px; /* Odległość od prawej krawędzi */
+    height: 260px; /* Dostosuj wysokość zdjęcia */
+    width: auto; /* Zachowaj proporcje zdjęcia */
+}
+
+/* Stylizacja stopki */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.whatsapp-header {
+    text-align: center; /* Wyrównanie tekstu do środka */
+    font-size: 24px; /* Dostosuj rozmiar czcionki */
+    font-weight: normal; /* Zmiana z pogrubienia na normalną czcionkę */
+    margin-bottom: 20px; /* Dodaj większy odstęp poniżej nagłówka */
+    color: white; /* Kolor czcionki */
+    background-color: black; /* Czarne tło */
+    padding: 20px; /* Dodaj wewnętrzny odstęp wokół tekstu */
+    border-radius: 10px; /* Zaokrąglenie narożników */
+    display: inline-block; /* Ustaw, aby tło obejmowało tylko tekst */
+    line-height: 1.5; /* Dostosowanie wysokości linii */
+}
+/* Stylizacja dla kart produktów */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px; /* Dodaj padding wokół kart produktów, aby nie nachodziły na krawędzie */
+    margin-top: 2px; /* Zapewnia przestrzeń pod nagłówkiem */
+}
+
+/* Stylizacja dla karty produktu */
+.product-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; /* Odstęp od dołu */
+}
+
+/* Stylizacja obrazu produktu */
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Stylizacja informacji o produkcie */
+.product-info {
+    padding: 15px;
+}
+
+/* Stylizacja przycisku szczegółów produktu */
+.show-details-btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Stylizacja szczegółów produktu */
+.product-details {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-top: 1px solid #333;
+}
+
+/* Stylizacja obrazu w szczegółach produktu */
+.product-details-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Stylizacja dla strony kontaktowej */
+.kontakt-main {
+    margin-top: 170px; /* Przestrzeń na menu */
+    padding: 20px;
+    text-align: center;
+    height: calc(100vh - 140px); /* Wysokość okna minus wysokość nagłówka i stopki */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stylizacja dla czarnego pola wokół tekstu */
+.black-box {
+    background-color: black; /* Czarne tło */
+    color: white; /* Kolor tekstu */
+    padding: 30px; /* Odstęp wewnętrzny wokół tekstu */
+    border-radius: 10px; /* Zaokrąglenie narożników */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dodanie lekkiego cienia dla efektu unoszenia */
+    max-width: 600px; /* Maksymalna szerokość pola */
+    width: 100%; /* Dopasowanie do pełnej szerokości */
+    text-align: left; /* Wyrównanie tekstu do lewej */
+}
+
+.allegro-link {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    /* Stylizacja nagłówka na mniejszych ekranach */
+    header {
+        padding: 10px 10px; /* Mniejsze paddingi dla nagłówka */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        height: 40px; /* Mniejsza wysokość logo */
+        margin-left: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Większe odstępy dla pozycji menu */
+    }
+
+    .products {
+        padding: 10px;
+        gap: 10px; /* Mniejsze odstępy między kartami produktów */
+    }
+
+    /* Stylizacja dla głównej sekcji strony */
+    main {
+        margin-top: 50px; /* Mniejsza przestrzeń na menu */
+    }
+
+    /* Stylizacja dla stopki */
+    footer {
+        padding: 10px 10px;
+    }
+}
+
+/* Stylizacja linku telefonicznego */
+.phone-link {
+    color: #ffcc00; /* Kolor numeru telefonu */
+    text-decoration: none; /* Usuń podkreślenie */
+    font-weight: bold; /* Wyróżnij numer telefonu */
+}
+
+.phone-link:hover {
+    text-decoration: underline; /* Dodaj podkreślenie na hover */
+}
+
+/* Stylizacja lightboxa */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    /* Dodaj pointer-events: none do lightboxa, aby kliknięcia na tło były ignorowane */
+    pointer-events: none;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.lightbox img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh; /* Maksymalna wysokość zdjęcia */
+    object-fit: contain; /* Aby obrazek nie był zniekształcony */
+}
+
+/* Stylizacja strzałek */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 3px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dodaj pointer-events: auto do strzałek, aby były klikane */
+    pointer-events: auto;
+}
+
+.prev {
+    left: 10px; /* Dostosuj położenie strzałki w lewo */
+}
+
+.next {
+    right: 10px; /* Dostosuj położenie strzałki w prawo */
+}
+/* Stylizacja krzyżyka do zamykania lightboxa */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 1002; /* Zapewnia, że krzyżyk będzie na wierzchu */
+}

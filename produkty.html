@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep - Produkty</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo sklepu" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="produkty.html">Produkty</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Nowy nagłówek -->
+        <h3 class="whatsapp-header">Zakup odbywa się poprzez napisanie do mnie na WhatsAppie, wtedy jest taniej!</h3>
+        <div class="products">
+            <div class="product-card" id="product1">
+                <img src="produkt1.jpg" alt="Produkt 1" class="product-image" onclick="openLightbox('product1')">
+                <div class="product-info">
+                    <h2>Produkt 1</h2>
+                    <button class="show-details-btn">Pokaż szczegóły</button>
+                    <div class="product-details">
+                        <p>Opis produktu 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><strong>Cena: 100 PLN</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" id="product2">
+                <img src="produkt2.jpg" alt="Produkt 2" class="product-image" onclick="openLightbox('product2')">
+                <div class="product-info">
+                    <h2>Produkt 2</h2>
+                    <button class="show-details-btn">Pokaż szczegóły</button>
+                    <div class="product-details">
+                        <p>Opis produktu 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p><strong>Cena: 200 PLN</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" id="product3">
+                <img src="produkt3.jpg" alt="Produkt 3" class="product-image" onclick="openLightbox('product3')">
+                <div class="product-info">
+                    <h2>Drzewko szczęścia BURSZTYN</h2>
+                    <button class="show-details-btn">Pokaż szczegóły</button>
+                    <div class="product-details">
+                        <p><br>Na gałązkach drzewka umieszczono <b>432 BRYŁEK BURSZTYNU.</b></br></p>
+
+                            <br><b>Wysokość drzewka - 20 cm</b></br>
+<br>
+Podstawka drzewka jest z korzenia dębu lub mopani, posypana drobno zmielonym bursztynem - również wykonywana przez nas ręcznie.
+                    <br>
+                        <br><b>ZDJĘCIA POGLĄDOWE MOGĄ SIĘ RÓŻNIĆ PODSTAWĄ.</b>
+                        </p>
+                        <br>
+                        <p><strong>Cena: 378 PLN</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="prev" onclick="changeSlide(-1, event)">&#10094;</span>
+    <span class="next" onclick="changeSlide(1, event)">&#10095;</span>
+    <span class="close" onclick="closeLightbox(event)">&#10005;</span>
+    <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="Powiększone zdjęcie">
+    </div>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sklep - Wszystkie prawa zastrzeżone</p>
+    </footer>
+</body>
+</html>
