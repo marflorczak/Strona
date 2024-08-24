@@ -90,8 +90,9 @@ main {
     right: 40px; /* Odległość od prawej krawędzi */
     height: 260px; /* Dostosuj wysokość zdjęcia */
     width: auto; /* Zachowaj proporcje zdjęcia */
+    max-width: 100%; /* Upewnij się, że zdjęcie nie wykracza poza kontener */
+    max-height: 50vh; /* Ustaw maksymalną wysokość, aby nie zasłaniało treści */
 }
-
 /* Stylizacja stopki */
 footer {
     text-align: center;
@@ -238,6 +239,12 @@ footer {
     /* Stylizacja dla stopki */
     footer {
         padding: 10px 10px;
+    }
+
+    .small-image {
+        top: 20px; /* Mniejsza odległość od górnej krawędzi */
+        right: 10px; /* Mniejsza odległość od prawej krawędzi */
+        height: 150px; /* Mniejsza wysokość zdjęcia */
     }
 }
 
