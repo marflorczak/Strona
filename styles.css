@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     color: white;
-    background-image: url('tlo.jpg'); /* Ścieżka do zdjęcia tła */
+    background-image: url('tlo.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -19,7 +19,7 @@ body {
 /* Stylizacja nagłówka */
 header {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px; /* Ustawia padding dla nagłówka */
+    padding: 10px 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -27,12 +27,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap; /* Umożliwia trzymanie elementów w jednej linii */
 }
 
 /* Stylizacja logo w nagłówku */
 .logo {
-    height: 50px; /* Dostosuj wysokość logo */
-    margin-left: 20px; /* Dostosuj odstęp od lewej krawędzi */
+    height: 50px;
+    margin-left: 20px;
 }
 
 /* Stylizacja dla menu nawigacyjnego */
@@ -41,10 +42,11 @@ nav ul {
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0 15px; /* Dostosuj odstęp między pozycjami menu */
+    margin: 0;
 }
 
 nav ul li a {
@@ -54,45 +56,52 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Dodanie przycisku menu na małych ekranach */
+.menu-toggle {
+    display: none;
+}
+
 /* Stylizacja głównej sekcji strony */
 main {
-    margin-top: 70px; /* Przestrzeń na menu */
+    margin-top: 80px; /* Przestrzeń na nagłówek */
     padding: 20px;
     text-align: center;
     min-height: calc(100vh - 140px); /* Wysokość okna minus wysokość nagłówka i stopki */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Wyśrodkowanie w poziomie */
-    position: relative; /* Pozycjonowanie względne, aby zdjęcia absolutne były względem main */
+    align-items: center;
+    position: relative;
 }
 
-
+/* Stylizacja dla czarnego pola wokół tekstu */
 .black-box {
-    background-color: rgba(0, 0, 0, 0.8); /* Czarne tło z lekko przezroczystym efektem */
-    color: white; /* Kolor tekstu */
-    padding: 30px; /* Wewnętrzny odstęp */
-    max-width: 800px; /* Maksymalna szerokość kontenera */
-    margin: 20px auto; /* Automatyczne marginesy dla wyśrodkowania poziomego */
-    border-radius: 10px; /* Zaokrąglenie narożników */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Delikatny cień pod polem */
-    text-align: center; /* Wyśrodkowanie tekstu */
-    line-height: 1.6; /* Wysokość linii dla lepszej czytelności */
-    display: flex; /* Użyj flexboxa */
-    flex-direction: column; /* Ustawienie kolumny */
-    justify-content: center; /* Wyśrodkowanie w pionie */
-    align-items: center; /* Wyśrodkowanie w poziomie */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Stylizacja dla małego zdjęcia w sekcji main */
 .small-image {
-    position: absolute; /* Pozycjonowanie absolutne w odniesieniu do sekcji main */
-    top: 70px; /* Odległość od górnej krawędzi */
-    right: 40px; /* Odległość od prawej krawędzi */
-    height: 260px; /* Dostosuj wysokość zdjęcia */
-    width: auto; /* Zachowaj proporcje zdjęcia */
-    max-width: 100%; /* Upewnij się, że zdjęcie nie wykracza poza kontener */
-    max-height: 50vh; /* Ustaw maksymalną wysokość, aby nie zasłaniało treści */
+    position: absolute;
+    top: 70px;
+    right: 80px;
+    height: 250px;
+    width: auto;
+    max-width: 100%;
+    max-height: 50vh;
+    margin: 20px;
 }
+
 /* Stylizacja stopki */
 footer {
     text-align: center;
@@ -104,26 +113,28 @@ footer {
     bottom: 0;
 }
 
+/* Stylizacja WhatsApp header */
 .whatsapp-header {
-    text-align: center; /* Wyrównanie tekstu do środka */
-    font-size: 24px; /* Dostosuj rozmiar czcionki */
-    font-weight: normal; /* Zmiana z pogrubienia na normalną czcionkę */
-    margin-bottom: 20px; /* Dodaj większy odstęp poniżej nagłówka */
-    color: white; /* Kolor czcionki */
-    background-color: black; /* Czarne tło */
-    padding: 20px; /* Dodaj wewnętrzny odstęp wokół tekstu */
-    border-radius: 10px; /* Zaokrąglenie narożników */
-    display: inline-block; /* Ustaw, aby tło obejmowało tylko tekst */
-    line-height: 1.5; /* Dostosowanie wysokości linii */
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    line-height: 1.5;
 }
+
 /* Stylizacja dla kart produktów */
 .products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 20px; /* Dodaj padding wokół kart produktów, aby nie nachodziły na krawędzie */
-    margin-top: 2px; /* Zapewnia przestrzeń pod nagłówkiem */
+    padding: 20px;
+    margin-top: 20px; /* Zwiększony margines górny */
 }
 
 /* Stylizacja dla karty produktu */
@@ -135,7 +146,7 @@ footer {
     text-align: center;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px; /* Odstęp od dołu */
+    margin-bottom: 20px;
 }
 
 /* Stylizacja obrazu produktu */
@@ -176,10 +187,10 @@ footer {
 
 /* Stylizacja dla strony kontaktowej */
 .kontakt-main {
-    margin-top: 170px; /* Przestrzeń na menu */
+    margin-top: 170px;
     padding: 20px;
     text-align: center;
-    height: calc(100vh - 140px); /* Wysokość okna minus wysokość nagłówka i stopki */
+    height: calc(100vh - 140px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,16 +199,17 @@ footer {
 
 /* Stylizacja dla czarnego pola wokół tekstu */
 .black-box {
-    background-color: black; /* Czarne tło */
-    color: white; /* Kolor tekstu */
-    padding: 30px; /* Odstęp wewnętrzny wokół tekstu */
-    border-radius: 10px; /* Zaokrąglenie narożników */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dodanie lekkiego cienia dla efektu unoszenia */
-    max-width: 600px; /* Maksymalna szerokość pola */
-    width: 100%; /* Dopasowanie do pełnej szerokości */
-    text-align: left; /* Wyrównanie tekstu do lewej */
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
 }
 
+/* Link Allegro */
 .allegro-link {
     color: #ffcc00;
     text-decoration: underline;
@@ -207,58 +219,136 @@ footer {
 @media (max-width: 768px) {
     /* Stylizacja nagłówka na mniejszych ekranach */
     header {
-        padding: 10px 10px; /* Mniejsze paddingi dla nagłówka */
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 10px;
+        flex-direction: row; /* Umożliwia trzymanie elementów w jednej linii */
+        align-items: center;
+        justify-content: space-between;
     }
 
     .logo {
-        height: 40px; /* Mniejsza wysokość logo */
+        height: 40px;
         margin-left: 10px;
+        margin-bottom: 0;
     }
 
-    nav ul {
+    /* Stylizacja menu na mniejszych ekranach */
+    .nav-menu {
+        display: flex;
+        flex-direction: row; /* Menu w jednej linii */
+    }
+
+    .nav-menu ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .nav-menu ul li {
+        margin: 0;
+    }
+
+    .nav-menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Stylizacja rozwijanego menu */
+    .menu-open .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 200px;
+        border-radius: 5px;
+        padding: 5px;
+        z-index: 1000;
+        max-height: 100px; /* Maksymalna wysokość menu */
+    overflow-y: autpx; /* Dodaje przewijanie, jeśli menu jest za wysokie */
+    }
+
+    /* Stylizacja dla elementów menu w rozwijanym menu */
+.menu-open .nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-open .nav-menu ul li {
+    margin: 0;
+}
+
+.menu-open .nav-menu ul li a {
+    display: block;
+    padding: 10px 20px; /* Dostosuj padding wewnętrzny, aby zmniejszyć wysokość */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Ukrywanie menu po kliknięciu na przycisk */
+.menu-toggle.open + .nav-menu {
+    display: flex;
+}
+
+    .nav-menu ul {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    nav ul li {
-        margin: 10px 0; /* Większe odstępy dla pozycji menu */
-    }
-
-    .products {
-        padding: 10px;
-        gap: 10px; /* Mniejsze odstępy między kartami produktów */
+    .nav-menu ul li {
+        margin: 3px ;
     }
 
     /* Stylizacja dla głównej sekcji strony */
     main {
-        margin-top: 50px; /* Mniejsza przestrzeń na menu */
+        margin-top: 120px; /* Zwiększony margines na mniejszych ekranach */
+    }
+
+    .black-box {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .small-image {
+        position: relative; /* Zdjęcie będzie wewnątrz przepływu dokumentu na mniejszych ekranach */
+        top: 0;
+        right: 0;
+        margin: 20px auto;
+        height: auto; /* Zdjęcie skalowane do szerokości */
     }
 
     /* Stylizacja dla stopki */
     footer {
-        padding: 10px 10px;
-    }
-
-    .small-image {
-        top: 20px; /* Mniejsza odległość od górnej krawędzi */
-        right: 10px; /* Mniejsza odległość od prawej krawędzi */
-        height: 150px; /* Mniejsza wysokość zdjęcia */
+        padding: 10px;
     }
 }
 
 /* Stylizacja linku telefonicznego */
 .phone-link {
-    color: #ffcc00; /* Kolor numeru telefonu */
-    text-decoration: none; /* Usuń podkreślenie */
-    font-weight: bold; /* Wyróżnij numer telefonu */
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .phone-link:hover {
-    text-decoration: underline; /* Dodaj podkreślenie na hover */
+    text-decoration: underline;
 }
-
 /* Stylizacja lightboxa */
 .lightbox {
     display: none;
@@ -271,7 +361,6 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 1001;
-    /* Dodaj pointer-events: none do lightboxa, aby kliknięcia na tło były ignorowane */
     pointer-events: none;
 }
 
@@ -284,8 +373,8 @@ footer {
 .lightbox img {
     width: 100%;
     height: auto;
-    max-height: 80vh; /* Maksymalna wysokość zdjęcia */
-    object-fit: contain; /* Aby obrazek nie był zniekształcony */
+    max-height: 80vh;
+    object-fit: contain;
 }
 
 /* Stylizacja strzałek */
@@ -302,17 +391,17 @@ footer {
     border-radius: 3px;
     user-select: none;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Dodaj pointer-events: auto do strzałek, aby były klikane */
     pointer-events: auto;
 }
 
 .prev {
-    left: 10px; /* Dostosuj położenie strzałki w lewo */
+    left: 10px;
 }
 
 .next {
-    right: 10px; /* Dostosuj położenie strzałki w prawo */
+    right: 10px;
 }
+
 /* Stylizacja krzyżyka do zamykania lightboxa */
 .close {
     position: absolute;
@@ -322,8 +411,5 @@ footer {
     font-size: 36px;
     cursor: pointer;
     user-select: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 5px;
-    z-index: 1002; /* Zapewnia, że krzyżyk będzie na wierzchu */
+    background-color: rgba(0, 0, 0, 0)
 }
