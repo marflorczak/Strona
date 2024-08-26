@@ -334,8 +334,8 @@ footer {
     }
 
     .map-embed {
-        width: 250px; /* Szerokość mapy */
-        height: 125px; /* Wysokość mapy */
+        width: 150px; /* Szerokość mapy */
+        height: 75px; /* Wysokość mapy */
         border: 0;
     }
 
