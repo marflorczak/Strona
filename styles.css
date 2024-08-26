@@ -222,7 +222,7 @@ footer {
         padding: 10px;
         flex-direction: row; /* Umożliwia trzymanie elementów w jednej linii */
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;;
     }
 
     .logo {
@@ -277,7 +277,7 @@ footer {
         padding: 5px;
         z-index: 1000;
         max-height: 100px; /* Maksymalna wysokość menu */
-    overflow-y: autpx; /* Dodaje przewijanie, jeśli menu jest za wysokie */
+    overflow-y: auto; /* Dodaje przewijanie, jeśli menu jest za wysokie */
     }
 
     /* Stylizacja dla elementów menu w rozwijanym menu */
@@ -334,8 +334,8 @@ footer {
     }
 
     .map-embed {
-        width: 300px; /* Szerokość mapy */
-        height: 200px; /* Wysokość mapy */
+        width: 250px; /* Szerokość mapy */
+        height: 125px; /* Wysokość mapy */
         border: 0;
     }
 
