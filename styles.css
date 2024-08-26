@@ -333,6 +333,12 @@ footer {
         height: auto; /* Zdjęcie skalowane do szerokości */
     }
 
+    .map-embed {
+        width: 300px; /* Szerokość mapy */
+        height: 200px; /* Wysokość mapy */
+        border: 0;
+    }
+
     /* Stylizacja dla stopki */
     footer {
         padding: 10px;
@@ -412,4 +418,10 @@ footer {
     cursor: pointer;
     user-select: none;
     background-color: rgba(0, 0, 0, 0)
+}
+
+.map-embed {
+    width: 400px; /* Szerokość mapy */
+    height: 300px; /* Wysokość mapy */
+    border: 0;
 }
