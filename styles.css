@@ -222,7 +222,7 @@ footer {
         padding: 10px;
         flex-direction: row; /* Umożliwia trzymanie elementów w jednej linii */
         align-items: center;
-        justify-content: flex-start;;
+        justify-content: space-between;;
     }
 
     .logo {
@@ -334,8 +334,8 @@ footer {
     }
 
     .map-embed {
-        width: 150px; /* Szerokość mapy */
-        height: 75px; /* Wysokość mapy */
+        width: 250px; /* Szerokość mapy */
+        height: 125px; /* Wysokość mapy */
         border: 0;
     }
 
