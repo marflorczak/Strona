@@ -102,12 +102,6 @@ main {
     margin: 20px;
 }
 
-.map-embed {
-    width: 500px; /* Szerokość mapy */
-    height: 300px; /* Wysokość mapy */
-    border: 0;
-}
-
 /* Stylizacja stopki */
 footer {
     text-align: center;
@@ -257,7 +251,7 @@ footer {
     .nav-menu ul li a {
         color: white;
         text-decoration: none;
-        font-size: 10px; /* Zmniejszony rozmiar czcionki */
+        font-size: 18px;
         font-weight: bold;
     }
 
@@ -311,6 +305,7 @@ footer {
 .menu-toggle.open + .nav-menu {
     display: flex;
 }
+
     .nav-menu ul {
         flex-direction: column;
         align-items: flex-start;
@@ -339,11 +334,12 @@ footer {
     }
 
     .map-embed {
-        width: 350px; /* Szerokość mapy */
-        height: 200px; /* Wysokość mapy */
+        width: 100px; /* Szerokość mapy */
+        height: 50px; /* Wysokość mapy */
         border: 0;
     }
     
+
     /* Stylizacja dla stopki */
     footer {
         padding: 10px;
@@ -423,4 +419,10 @@ footer {
     cursor: pointer;
     user-select: none;
     background-color: rgba(0, 0, 0, 0)
+}
+
+.map-embed {
+    width: 500px; /* Szerokość mapy */
+    height: 300px; /* Wysokość mapy */
+    border: 0;
 }
