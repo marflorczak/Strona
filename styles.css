@@ -102,6 +102,12 @@ main {
     margin: 20px;
 }
 
+.map-embed {
+    width: 500px; /* Szerokość mapy */
+    height: 300px; /* Wysokość mapy */
+    border: 0;
+}
+
 /* Stylizacja stopki */
 footer {
     text-align: center;
@@ -251,8 +257,7 @@ footer {
     .nav-menu ul li a {
         color: white;
         text-decoration: none;
-        font-size: 18px; /* Zmniejszony rozmiar czcionki */
-        padding: 8px 15px; /* Zmniejszone paddingi, aby dostosować rozmiar */
+        font-size: 10px; /* Zmniejszony rozmiar czcionki */
         font-weight: bold;
     }
 
@@ -298,7 +303,6 @@ footer {
         border: 0;
     }
     
-
     /* Stylizacja dla stopki */
     footer {
         padding: 10px;
@@ -378,10 +382,4 @@ footer {
     cursor: pointer;
     user-select: none;
     background-color: rgba(0, 0, 0, 0)
-}
-
-.map-embed {
-    width: 400px; /* Szerokość mapy */
-    height: 300px; /* Wysokość mapy */
-    border: 0;
 }
