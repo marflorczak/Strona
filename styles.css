@@ -335,7 +335,7 @@ footer {
 
     .map-embed {
         width: 320px; /* Szerokość mapy */
-        height: 340px; /* Wysokość mapy */
+        height: 300px; /* Wysokość mapy */
         border: 0;
     }
 
