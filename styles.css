@@ -251,7 +251,7 @@ footer {
     .nav-menu ul li a {
         color: white;
         text-decoration: none;
-        font-size: 10px; /* Zmniejszony rozmiar czcionki */
+        font-size: 18px; /* Zmniejszony rozmiar czcionki */
         padding: 8px 15px; /* Zmniejszone paddingi, aby dostosować rozmiar */
         font-weight: bold;
     }
@@ -264,48 +264,6 @@ footer {
         color: white;
         cursor: pointer;
     }
-
-    /* Stylizacja rozwijanego menu */
-    .menu-open .nav-menu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.9);
-        width: 200px;
-        border-radius: 5px;
-        padding: 5px;
-        z-index: 1000;
-        max-height: 100px; /* Maksymalna wysokość menu */
-    overflow-y: autpx; /* Dodaje przewijanie, jeśli menu jest za wysokie */
-    }
-
-    /* Stylizacja dla elementów menu w rozwijanym menu */
-.menu-open .nav-menu ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-open .nav-menu ul li {
-    margin: 0;
-}
-
-.menu-open .nav-menu ul li a {
-    display: block;
-    padding: 10px 20px; /* Dostosuj padding wewnętrzny, aby zmniejszyć wysokość */
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Ukrywanie menu po kliknięciu na przycisk */
-.menu-toggle.open + .nav-menu {
-    display: flex;
-}
 
     .nav-menu ul {
         flex-direction: column;
