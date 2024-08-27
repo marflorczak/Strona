@@ -235,6 +235,7 @@ footer {
         flex-direction: row; /* Umożliwia trzymanie elementów w jednej linii */
         align-items: center;
         justify-content: space-between;
+        
     }
 
     .logo {
@@ -333,9 +334,9 @@ footer {
     }
 
     .black-box1 {
-        max-width: 100%;
-        padding: 20px;
-        margin-top: 450px;
+        margin-top: 300px; /* Możesz dostosować wartość do własnych potrzeb */
+        padding: 20px; /* Dodatkowe odstępy wewnętrzne, jeśli potrzebne */
+        border-radius: 10px; /* Opcjonalnie: zaokrąglone rogi */
     }
 
     .small-image {
