@@ -336,9 +336,8 @@ footer {
     }
 
     .black-box1 {
-        margin-top: 300px; /* Możesz dostosować wartość do własnych potrzeb */
-        padding: 20px; /* Dodatkowe odstępy wewnętrzne, jeśli potrzebne */
-        border-radius: 10px; /* Opcjonalnie: zaokrąglone rogi */
+        max-width: 100%;
+        padding: 20px;
     }
 
     .small-image {
@@ -443,3 +442,5 @@ footer {
     user-select: none;
     background-color: rgba(0, 0, 0, 0)
 }
+
+
