@@ -251,7 +251,8 @@ footer {
     .nav-menu ul li a {
         color: white;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 10px; /* Zmniejszony rozmiar czcionki */
+        padding: 8px 15px; /* Zmniejszone paddingi, aby dostosować rozmiar */
         font-weight: bold;
     }
 
