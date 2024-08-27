@@ -214,6 +214,11 @@ footer {
     color: #ffcc00;
     text-decoration: underline;
 }
+.map-embed {
+    width: 550px; /* Szerokość mapy */
+    height: 350px; /* Wysokość mapy */
+    border: 0;
+}
 
 /* Responsywność */
 @media (max-width: 768px) {
@@ -315,12 +320,7 @@ footer {
         margin: 3px ;
     }
 
-    /* Stylizacja dla głównej sekcji strony */
-    main {
-        margin-top: 120px; /* Zwiększony margines na mniejszych ekranach */
-    }
-
-    .black-box {
+.black-box {
         max-width: 100%;
         padding: 20px;
     }
@@ -334,10 +334,17 @@ footer {
     }
 
     .map-embed {
-        width: 100px; /* Szerokość mapy */
-        height: 50px; /* Wysokość mapy */
+        width: 320px; /* Szerokość mapy */
+        height: 340px; /* Wysokość mapy */
         border: 0;
     }
+
+    /* Stylizacja dla głównej sekcji strony */
+    main {
+        margin-top: 120px; /* Zwiększony margines na mniejszych ekranach */
+    }
+
+    
     
 
     /* Stylizacja dla stopki */
@@ -421,8 +428,4 @@ footer {
     background-color: rgba(0, 0, 0, 0)
 }
 
-.map-embed {
-    width: 500px; /* Szerokość mapy */
-    height: 300px; /* Wysokość mapy */
-    border: 0;
-}
+
