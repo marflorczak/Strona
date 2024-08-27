@@ -223,6 +223,13 @@ footer {
     color: #ffcc00;
     text-decoration: underline;
 }
+
+/*Link Cennik */
+.cennik-link {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
 .map-embed {
     width: 550px; /* Szerokość mapy */
     height: 350px; /* Wysokość mapy */
