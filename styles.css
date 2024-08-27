@@ -63,7 +63,7 @@ nav ul li a {
 
 /* Stylizacja głównej sekcji strony */
 main {
-    margin-top: 80px; /* Przestrzeń na nagłówek */
+    margin-top: 100px; /* Przestrzeń na nagłówek */
     padding: 20px;
     text-align: center;
     min-height: calc(100vh - 140px); /* Wysokość okna minus wysokość nagłówka i stopki */
@@ -215,7 +215,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 110px;
 }
 
 /* Link Allegro */
@@ -443,5 +443,3 @@ footer {
     user-select: none;
     background-color: rgba(0, 0, 0, 0)
 }
-
-
